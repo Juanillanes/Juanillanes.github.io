@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galería de arte con algunas de las pinturas más famosas de la historia.">
+    <title>Galería de Arte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #34495e;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galería de Arte</h1>
+        <p>Explora algunas de las pinturas más famosas de la historia</p>
+    </header>
+    <div class="gallery-container">
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="1.jpg">
+            </div>
+            <div class="gallery-item">
+                <img src="2.jpg">
+            </div>
+            <div class="gallery-item">
+                <img src="3.jpg">
+            </div>
+            <div class="gallery-item">
+                <img src="4.jpg">
+            </div>
+            <div class="gallery-item">
+                <img src="5.jpg">
+            </div>
+            <div class="gallery-item">
+                <img src="6.jpg">
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 - Galería de Arte</p>
+    </footer>
+</body>
+</html>

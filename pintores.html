@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galería de pintores famosos y algunas de sus obras más conocidas.">
+    <title>Galería de Pintores Famosos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #34495e;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+        .gallery-item h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+            color: #34495e;
+        }
+        .gallery-item p {
+            font-size: 1.2em;
+            color: #7f8c8d;
+        }
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galería de Pintores Famosos</h1>
+        <p>Conoce a los grandes maestros de la pintura y sus obras más representativas.</p>
+    </header>
+    <div class="gallery-container">
+        <section class="gallery">
+            <!-- Picasso -->
+            <div class="gallery-item">
+                <img src="a.jpg">
+                <h3>Pablo Picasso</h3>
+                <p>Uno de los artistas más influyentes del siglo XX, conocido por su obra "Guernica" y por cofundar el cubismo.</p>
+            </div>
+
+            <!-- Van Gogh -->
+            <div class="gallery-item">
+                <img src="b.jpg">
+                <h3>Vincent van Gogh</h3>
+                <p>Famoso por sus pinceladas expresivas y colores vibrantes, es el autor de obras icónicas como "La Noche Estrellada".</p>
+            </div>
+
+            <!-- Frida Kahlo -->
+            <div class="gallery-item">
+                <img src="c.jpg">
+                <h3>Frida Kahlo</h3>
+                <p>Icono del surrealismo y el arte mexicano, conocida por sus autorretratos profundamente personales y coloridos.</p>
+            </div>
+
+            <!-- Salvador Dalí -->
+            <div class="gallery-item">
+                <img src="d.jpg">
+                <h3>Salvador Dalí</h3>
+                <p>Pintor surrealista conocido por su estilo único y su obra "La Persistencia de la Memoria", con relojes derretidos.</p>
+            </div>
+
+            <!-- Leonardo da Vinci -->
+            <div class="gallery-item">
+                <img src="e.jpg">
+                <h3>Leonardo da Vinci</h3>
+                <p>Un genio del Renacimiento, autor de obras maestras como "La Última Cena" y "La Mona Lisa".</p>
+            </div>
+
+            <!-- Claude Monet -->
+            <div class="gallery-item">
+                <img src="f.jpg">
+                <h3>Claude Monet</h3>
+                <p>Fundador del impresionismo, famoso por su uso de la luz y el color en obras como "Impresión, sol naciente".</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 - Galería de Pintores Famosos</p>
+    </footer>
+</body>
+</html>
